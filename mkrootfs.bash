@@ -29,3 +29,4 @@ echo "${mirror}/latest-stable/main/" > ${chroot_dir}/etc/apk/repositories
 
 # save
 tar -z -f rootfs.tar.gz --numeric-owner -C ${chroot_dir} -c .
+chmod 666 rootfs.tar.gz
