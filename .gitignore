@@ -1,0 +1,4 @@
+chroot/
+sbin/
+*.apk
+*.gz
