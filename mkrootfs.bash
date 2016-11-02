@@ -3,6 +3,9 @@ mirror="http://dl-cdn.alpinelinux.org/alpine"
 version="2.6.7-r0"
 chroot_dir="`pwd`/rootfs/"
 
+
+sudo rm -r rootfs/ rootfs.tar.gz sbin/ apk-tools-static-${version}.apk
+
 # Check root level permissions
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
